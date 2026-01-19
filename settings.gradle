@@ -1,0 +1,56 @@
+pluginManagement {
+    includeBuild("build-logic")
+
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+
+        // Or use a single nexus repository
+        // maven {
+        //     url "https://nexus.myrepo.ru/repository/"
+        // }
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+
+    repositories {
+        google()
+        mavenCentral()
+
+        // Or use a single nexus repository
+        // maven {
+        //     url "https://nexus.myrepo.ru/repository/"
+        // }
+    }
+}
+
+boolean isCiServer = System.getenv().containsKey("CI")
+
+buildCache {
+    remote(HttpBuildCache) {
+        // Activate if you have a remote cache implemented
+        enabled = false
+
+        // Add your URL
+        url = 'https://example.com/cache/'
+
+        setPush(isCiServer)
+
+        credentials {
+            username = System.getenv("REMOTE_CACHE_USERNAME")
+            password = System.getenv("REMOTE_CACHE_PASSWORD")
+        }
+    }
+}
+
+// Change to your artefact id
+rootProject.name = "buildlogic"
+// Configuration
+include 'app'
+// Library artefacts (sample build logic)
+include ':library:library-android'
+include ':library:library-bom'
+include ':library:library-jvm'

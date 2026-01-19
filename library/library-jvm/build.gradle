@@ -1,0 +1,7 @@
+plugins {
+    alias(libs.plugins.convention.kotlin.jvm)
+    alias(libs.plugins.convention.kotlin.jvm.publish)
+    alias(libs.plugins.convention.kotlin.jvm.jacoco)
+    alias(libs.plugins.convention.kotlin.jvm.lint)
+    alias(libs.plugins.convention.detekt)
+}
