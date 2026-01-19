@@ -51,181 +51,185 @@ latest AGP version 8.10.1. We use AGP version 8.10.1 accordingly.
 
 #### com.yugyd.buildlogic.android.application
 
-Плагин для базовой логики Android в модуле приложения
+Plugin for Basic Android Logic in the App Module
 
-- Настройка android плагина для application
-- Настройка compileSdk, targetSdk, minSdk
-- Настройка buildTypes
-- Настройка зависимостей
-- Настройка proguard
-- Настройка signingConfigs
+- Configure the Android plugin for the application
+- Set `compileSdk`, `targetSdk`, and `minSdk`
+- Configure `buildTypes`
+- Set up dependencies
+- Configure ProGuard
+- Set up `signingConfigs`
 
 #### com.yugyd.buildlogic.android.library
 
-Плагин для базовой логики Android в модуле библиотеки
+Plugin for Basic Android Logic in the Library Module
 
-- Настройка android плагина для library
-- Настройка compileSdk, targetSdk, minSdk
-- Настройка buildTypes
-- Настройка зависимостей
+- Configure the Android plugin for the library
+- Set `compileSdk`, `targetSdk`, and `minSdk`
+- Configure `buildTypes`
+- Set up dependencies
 
 #### com.yugyd.buildlogic.kotlin.jvm
 
-Плагин для базовой логики kotlin модуля библиотеки JVM
+Plugin for Basic Kotlin Logic in the JVM Library Module
 
-- Настройка kotlin плагина
-- Настройка зависимостей
+- Configure the Kotlin plugin
+- Set up dependencies
 
 **Build Types**
 
 #### com.yugyd.buildlogic.application.buildtype
 
-Плагин для конфигурации build types Android Application и отключения неиспользуемых product flavor
-вариантов.
+Plugin for Configuring Build Types in Android Application and Disabling Unused Product Flavor
+Variants.
 
 #### com.yugyd.buildlogic.library.buildtype
 
-Плагин для конфигурации build types Android Library и отключения неиспользуемых product flavor
-вариантов.
+Plugin for Configuring Build Types in Android Library and Disabling Unused Product Flavor Variants
 
 #### com.yugyd.buildlogic.buildtype.apk.version
 
-Плагин для добавления статических version значений в debug APK для производильности сборки.
+Plugin for adding static version values to Debug APK for build performance
 
 **Compose**
 
 #### com.yugyd.buildlogic.application.compose
 
-Плагин для настройки Jetpack Compose в Android Application (compiler metrics, версия компилятора,
-BOM и preview зависимости).
+Plugin for Configuring Jetpack Compose in Android Application *(compiler metrics, compiler version,
+BOM, and preview dependencies)*
 
-- Настройка зависимостей Compose
-- Настройка компилятора Compose
-- Настройка опций Compose
-- Добавление отчета производительности Compose
+- Set up Compose dependencies
+- Configure the Compose compiler
+- Configure Compose options
+- Add Compose performance report
 
 #### com.yugyd.buildlogic.library.compose
 
-Плагин для настройки Jetpack Compose в Android Library (compiler metrics, версия компилятора, BOM и
-preview зависимости).
+Plugin for Configuring Jetpack Compose in Android Library *(compiler metrics, compiler version, BOM,
+and preview dependencies)*
 
-- Настройка зависимостей Compose
-- Настройка компилятора Compose
-- Настройка опций Compose
-- Добавление отчета производительности Compose
+- Set up Compose dependencies
+- Configure the Compose compiler
+- Configure Compose options
+- Add Compose performance report
 
 **Jacoco**
 
 #### com.yugyd.buildlogic.application.jacoco
 
-Плагин для настройки Jacoco в Android Application (toolVersion, отчёты, excludes).
+Plugin for Configuring Jacoco in Android Application *(toolVersion, reports, excludes)*
 
-- Настройка Jacoco для юнит тестов
+- Configure Jacoco for unit tests
 
 #### com.yugyd.buildlogic.library.jacoco
 
-Плагин для настройки Jacoco в Android Library (toolVersion, отчёты, excludes).
+Plugin for Configuring Jacoco in Android Library *(toolVersion, reports, excludes)*
 
-- Настройка Jacoco для юнит тестов
+- Configure Jacoco for unit tests
 
 #### com.yugyd.buildlogic.kotlin.jacoco
 
-Плагин для настройки Jacoco в kotlin JVM модуле (toolVersion, отчёты, excludes).
+Plugin for Configuring Jacoco in Kotlin JVM Module *(toolVersion, reports, excludes)*
 
-- Настройка Jacoco для юнит тестов
+- Configure Jacoco for unit tests
 
 **Lint**
 
 #### com.yugyd.buildlogic.application.lint
 
-Плагин для настройки Android Lint в Application модуле (disables, abortOnError, warningsAsErrors и
-др.).
+Plugin for Configuring Android Lint in Application Module *(disables, abortOnError,
+warningsAsErrors, etc.)*
 
-- Настройка правил lint
-- Настройка отчетов lint
-- Настройка исключений lint
+- Configure lint rules
+- Configure lint reports
+- Configure lint exclusions
 
 #### com.yugyd.buildlogic.library.lint
 
-Плагин для настройки Android Lint в Library модуле (disables, abortOnError, warningsAsErrors и др.).
+Plugin for Configuring Android Lint in Library Module *(disables, abortOnError, warningsAsErrors,
+etc.)*
 
-- Настройка правил lint
-- Настройка отчетов lint
-- Настройка исключений lint
+- Configure lint rules
+- Configure lint reports
+- Configure lint exclusions
 
 #### com.yugyd.buildlogic.kotlin.lint
 
-Плагин для настройки Lint в kotlin JVM модуле.
+Plugin for Configuring Lint in Kotlin JVM Module
 
-- Настройка правил lint
-- Настройка отчетов lint
-- Настройка исключений lint
+- Configure lint rules
+- Configure lint reports
+- Configure lint exclusions
 
 **Publish**
 
 #### com.yugyd.buildlogic.library.publish
 
-Плагин для публикации Android Library в Maven репозитории.
+Plugin for Publishing Android Library to Maven Repository
 
-- Настройка публикации в Maven репозиторий
-- Настройка метаданных публикации
-- Настройка подписания артефактов
-- Настройка публикации исходников и javadoc
+- Configure publishing to Maven repository
+- Configure publication metadata
+- Configure artifact signing
+- Configure publishing of sources and Javadoc
 
 #### com.yugyd.buildlogic.kotlin.publish
 
-Плагин для публикации kotlin JVM библиотеки в Maven репозитории.
+Plugin for Publishing Kotlin JVM Library to Maven Repository
 
-- Настройка публикации в Maven репозиторий
-- Настройка метаданных публикации
-- Настройка подписания артефактов
-- Настройка публикации исходников и javadoc
+- Configure publishing to Maven repository
+- Configure publication metadata
+- Configure artifact signing
+- Configure publishing of sources and Javadoc
 
 #### com.yugyd.buildlogic.platform.publish
 
-Плагин для публикации Java Platform (BOM) в Maven репозитории.
+Plugin for Publishing Java Platform (BOM) to Maven Repository
 
-- Настройка и публикация bom файла
+- Configure and publish the BOM file
 
 **Test**
 
 #### com.yugyd.buildlogic.application.test
 
-Плагин для настройки тестов Android Application (instrumentation runner, test options).
+Plugin for Configuring Tests in Android Application *(instrumentation runner, test options)*
 
-- Настройка юнит тестов
-- Настройка инструментальных тестов
-- Настройка зависимостей тестирования
+- Configure unit tests
+- Configure instrumentation tests
+- Configure testing dependencies
 
 #### com.yugyd.buildlogic.library.test
 
-Плагин для настройки тестов Android Library (instrumentation runner, test options).
+Plugin for Configuring Tests in Android Library *(instrumentation runner, test options)*
 
-- Настройка юнит тестов
-- Настройка инструментальных тестов
-- Настройка зависимостей тестирования
+- Configure unit tests
+- Configure instrumentation tests
+- Configure testing dependencies
 
 **Tools**
 
 #### com.yugyd.buildlogic.detekt
 
-Плагин для настройки Detekt и статического анализа кода.
+Plugin for Configuring Detekt and Static Code Analysis
 
-- Настройка правил detekt
-- Настройка отчетов detekt
-- Настройка исключений detekt
+- Configure Detekt rules
+- Configure Detekt reports
+- Configure Detekt exclusions
 
-**Требования:**
+**Requirements:**
 
-Наличие конфигурационного файла detekt, если его нет `./gradlew detektGenerateConfig`
+A Detekt configuration file must be present. If it is missing, run:
+
+```bash
+./gradlew detektGenerateConfig
+```
 
 #### com.yugyd.buildlogic.dependency.updates
 
-Плагин для проверки обновлений зависимостей.
+Plugin for Checking Dependency Updates.
 
 #### com.yugyd.buildlogic.hilt
 
-Плагин для подключения Hilt (plugin, зависимости и KSP компилятор).
+Plugin for Integrating Hilt *(plugin, dependencies, and KSP compiler)*
 
 # Commands
 
